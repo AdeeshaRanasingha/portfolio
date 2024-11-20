@@ -17,6 +17,7 @@ A modern and responsive web application featuring an elegant design, interactive
 
 - **HTML5**: For the structure and content.
 - **CSS3**: For styling, layout, and responsiveness.
+- **JS**: For responsive buttons and navigation bar.
 
 ## File Structure
 
