@@ -16,3 +16,9 @@ function more() {
     count = 0; // Reset toggle state
   }
 }
+
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('open');
+  }
+
