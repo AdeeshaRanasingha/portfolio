@@ -86,6 +86,13 @@ img {
   font-family: arial;
   border: solid 5px rgb(136, 132, 133);
   
+  
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+
 }
 
 .price {
@@ -427,4 +434,156 @@ img {
 .icons img{
   height: 100px;
   width: auto;
+}
+
+
+.card button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.more, .contact-form button {
+  box-shadow: 0 4px 8px rgba(0, 255, 150, 0.2);
+}
+.icons img:hover {
+  filter: brightness(1.2);
+  transform: rotate(5deg);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust Navigation Bar */
+  ul.topnav li a {
+    font-size: 0.9rem;
+  }
+
+  /* Reduce Padding */
+  .container, .about-container {
+    padding: 10px;
+  }
+
+  .container img{
+    margin: 0px auto;
+    margin-top: -200px;
+  }
+
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  /* Adjust Card Sizes */
+  .card {
+    width: 90%;
+  }
+
+  .card button {
+    font-size: 1rem;
+  }
+
+  /* Adjust Footer */
+  .footer-container div {
+    width: 100%;
+  }
+
+  /* Reduce Icon Sizes */
+  .icons img {
+    height: 60px;
+  }
+
+  .social-links{
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+}
+/* General Navigation Bar Styling */
+nav.topnav {
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav.topnav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  background-color: aquamarine;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav.topnav .menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+nav.topnav ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav.topnav ul.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav.topnav ul.menu li a:hover {
+  background-color: #555;
+}
+
+nav.topnav ul.menu li a.active {
+  background-color: aquamarine;
+  color: #111;
+  border-radius: 5px;
+}
+
+/* Responsive Menu for Smaller Screens */
+@media screen and (max-width: 768px) {
+  nav.topnav .menu-icon {
+    display: block; /* Show hamburger menu */
+  }
+
+  nav.topnav ul.menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  nav.topnav ul.menu.open {
+    display: flex; /* Show menu when active */
+  }
+
+  nav.topnav ul.menu li {
+    text-align: center;
+  }
+
+  nav.topnav ul.menu li a {
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+  }
 }
