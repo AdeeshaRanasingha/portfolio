@@ -22,3 +22,6 @@ function more() {
     menu.classList.toggle('open');
   }
 
+function readMore(url) {
+  window.location.href = url;
+}
